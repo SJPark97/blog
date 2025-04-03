@@ -3,6 +3,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || ''
 export default function Head() {
   return (
     <>
+      <meta name="google-site-verification" content="_axGjF6qTadizKarWMCBApiwHebDB7p8Qt-c6m-K6F8" />  
       <meta charSet="utf-8" />
       <link rel="icon" href="/favicon.ico" />
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
