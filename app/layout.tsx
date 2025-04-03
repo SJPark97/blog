@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -18,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SJ의 개발 블로그",
     description: "프론트엔드 기술과 실전 경험을 기록합니다.",
-    url: "https://yourdomain.com",
+    url: siteUrl,
     siteName: "SJ Dev Blog",
     locale: "ko_KR",
     type: "website",
@@ -27,6 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SJ의 개발 블로그",
     description: "프론트엔드 기술과 실전 경험을 기록합니다.",
+    images: [`${siteUrl}/og.png`],
   },
 };
 
@@ -37,9 +40,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        <meta name="google-site-verification" content="_axGjF6qTadizKarWMCBApiwHebDB7p8Qt-c6m-K6F8" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="theme-color" content="#ffffff" />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
