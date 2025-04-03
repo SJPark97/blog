@@ -24,6 +24,14 @@ export const metadata: Metadata = {
     siteName: "SJ Dev Blog",
     locale: "ko_KR",
     type: "website",
+    images: [
+      {
+        url: `${siteUrl}/og.png`,
+        width: 1200,
+        height: 630,
+        alt: "SJ의 개발 블로그 대표 이미지",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
