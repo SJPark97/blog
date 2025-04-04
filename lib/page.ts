@@ -564,10 +564,10 @@ export class NotionAPI {
   }
 
   public async getSignedFileUrls(
-    urls: types.SignedUrlRequest[],
+    urls: SignedUrlRequest[],
     kyOptions?: KyOptions
   ) {
-    return this.fetch<types.SignedUrlResponse>({
+    return this.fetch<SignedUrlResponse>({
       endpoint: 'getSignedFileUrls',
       body: {
         urls
@@ -647,8 +647,8 @@ export class NotionAPI {
   }
 }
 
-const notion = new NotionAPI({ hqAuthToken: process.env.NOTION_SECRET || ''})
+const notionApi = new NotionAPI({ hqAuthToken: process.env.NOTION_SECRET || ''})
 
 export async function getPageContent(pageId: string) {
-  return await notion.getPage(pageId)
+  return await notionApi.getPage(pageId)
 }
