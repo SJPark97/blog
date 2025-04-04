@@ -1,0 +1,44 @@
+[
+    {
+      "id": "1c3dee7c-b4ee-8091-8f59-dee96527036b",
+      "title": "Vue2 - Vue3 Module Federation",
+      "slug": "6",
+      "summary": "Vue 2와 Vue 3를 Module Federation으로 통합하여 점진적 마이그레이션을 실현한 사례를 소개합니다.",
+      "createdAt": "2025-04-08"
+    },
+    {
+      "id": "1a1dee7c-b4ee-8050-a377-d9ef47269f31",
+      "title": "webpack to vite migration (실패기)",
+      "slug": "5",
+      "summary": "기존 webpack 기반 프로젝트를 Vite로 이전하려다 실패한 이유와 그 과정에서 얻은 인사이트를 공유합니다.",
+      "createdAt": "2025-04-07"
+    },
+    {
+      "id": "1badee7c-b4ee-808d-a669-f97e744de7ed",
+      "title": "TypeScript 재귀 타입을 활용한 i18n 경로 자동완성 분석",
+      "slug": "4",
+      "summary": "재귀 타입을 활용해 i18n 다국어 키의 경로 자동완성을 구현한 로직을 분석합니다.",
+      "createdAt": "2025-04-06"
+    },
+    {
+      "id": "1a7dee7c-b4ee-80d1-bcd1-c785dd428d57",
+      "title": "Git Hook을 활용한 AI 기반 Commit Message 자동 생성 (ChatGPT → Gemini 전환)",
+      "slug": "3",
+      "summary": "기존 ChatGPT에서 Gemini로 전환하여 Git 커밋 메시지를 자동 생성하는 Git Hook 기반 시스템을 구성합니다.",
+      "createdAt": "2025-04-05"
+    },
+    {
+      "id": "16fdee7c-b4ee-8005-ba5e-f5a14ce90f6a",
+      "title": "AI 기반 Git 커밋 메시지 자동 생성 시스템 구축",
+      "slug": "2",
+      "summary": "Chat GPT 기반 AI를 활용해 의미 있는 커밋 메시지를 자동으로 생성하는 워크플로우를 구현합니다.",
+      "createdAt": "2025-04-04"
+    },
+    {
+      "id": "1cadee7c-b4ee-801a-9e5c-c24632ed62b7",
+      "title": "블로그 Next 프로젝트 생성",
+      "slug": "1",
+      "summary": "App Router와 Tailwind 기반으로 구성한 Next.js 블로그 프로젝트의 초기 설정 과정을 정리합니다.",
+      "createdAt": "2025-04-03"
+    }
+]

@@ -1,8 +1,7 @@
-import { getAllPostsFromNotion } from '@/lib/db'
 import Link from 'next/link'
+import posts from '@/lib/posts.json'
 
 export default async function HomePage() {
-  const posts = await getAllPostsFromNotion();
   return (
     <div className="max-w-2xl mx-auto py-12 px-4">
       <h1 className="text-3xl font-bold mb-8">📝 블로그 글 목록</h1>
